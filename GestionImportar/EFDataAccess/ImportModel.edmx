@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ImportarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GVA17">
+          <Key>
+            <PropertyRef Name="ID_GVA17" />
+          </Key>
+          <Property Name="ID_GVA17" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FILLER" Type="varchar" MaxLength="20" />
+          <Property Name="COD_ARTICU" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="NRO_DE_LIS" Type="smallint" Nullable="false" />
+          <Property Name="PRECIO" Type="decimal" Precision="22" Scale="7" />
+          <Property Name="FECHA_MODI" Type="datetime" />
+          <Property Name="BASE" Type="bit" />
+          <Property Name="FECHA_PRECIOS_PEDIDOS" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="ImportarModelStoreContainer">
+          <EntitySet Name="GVA17" EntityType="Self.GVA17" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ImportarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GVA17">
+          <Key>
+            <PropertyRef Name="ID_GVA17" />
+          </Key>
+          <Property Name="ID_GVA17" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FILLER" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="COD_ARTICU" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NRO_DE_LIS" Type="Int16" Nullable="false" />
+          <Property Name="PRECIO" Type="Decimal" Precision="22" Scale="7" />
+          <Property Name="FECHA_MODI" Type="DateTime" Precision="3" />
+          <Property Name="BASE" Type="Boolean" />
+          <Property Name="FECHA_PRECIOS_PEDIDOS" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="GASMARKET_TUCUMANEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GVA17" EntityType="Self.GVA17" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ImportarModelStoreContainer" CdmEntityContainer="GASMARKET_TUCUMANEntities">
+          <EntitySetMapping Name="GVA17">
+            <EntityTypeMapping TypeName="ImportarModel.GVA17">
+              <MappingFragment StoreEntitySet="GVA17">
+                <ScalarProperty Name="ID_GVA17" ColumnName="ID_GVA17" />
+                <ScalarProperty Name="FILLER" ColumnName="FILLER" />
+                <ScalarProperty Name="COD_ARTICU" ColumnName="COD_ARTICU" />
+                <ScalarProperty Name="NRO_DE_LIS" ColumnName="NRO_DE_LIS" />
+                <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+                <ScalarProperty Name="FECHA_MODI" ColumnName="FECHA_MODI" />
+                <ScalarProperty Name="BASE" ColumnName="BASE" />
+                <ScalarProperty Name="FECHA_PRECIOS_PEDIDOS" ColumnName="FECHA_PRECIOS_PEDIDOS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
