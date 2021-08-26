@@ -47,7 +47,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 31;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista31", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista31", i].Value.ToString()),2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -55,7 +55,7 @@ namespace FormImportar
                                     }
                                     else 
                                     { 
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista31", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista31", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -75,7 +75,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 30;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista30", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista30", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -83,7 +83,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista30", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista30", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -103,7 +103,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 10;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista10", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista10", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -111,7 +111,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista10", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista10", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -131,7 +131,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 20;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista20", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista20", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -139,7 +139,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista20", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista20", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -159,7 +159,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 40;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista40", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista40", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -167,7 +167,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista40", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista40", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -187,7 +187,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 60;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista60", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista60", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -195,7 +195,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista60", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista60", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -215,7 +215,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 41;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista41", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista41", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -223,7 +223,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista41", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista41", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -243,7 +243,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 71;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista71", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista71", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -251,7 +251,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista71", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista71", i].Value.ToString()), 2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
@@ -271,7 +271,7 @@ namespace FormImportar
                                         registro = new GVA17();
                                         registro.COD_ARTICU = prod;
                                         registro.NRO_DE_LIS = 27;
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista27", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista27", i].Value.ToString()), 2);
                                         registro.FILLER = "";
                                         registro.FECHA_MODI = DateTime.Now;
                                         registro.BASE = false;
@@ -279,7 +279,7 @@ namespace FormImportar
                                     }
                                     else
                                     {
-                                        registro.PRECIO = Convert.ToDecimal(dgListaPrecios["Lista27", i].Value.ToString());
+                                        registro.PRECIO = decimal.Round(Convert.ToDecimal(dgListaPrecios["Lista27", i].Value.ToString()),2);
                                         registro.FECHA_MODI = DateTime.Now;
 
                                         db.Entry(registro).State = System.Data.Entity.EntityState.Modified;
