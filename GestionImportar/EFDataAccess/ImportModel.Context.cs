@@ -15,9 +15,9 @@ namespace EFDataAccess
     
     public partial class GASMARKET_TUCUMANEntities : DbContext
     {
-        string connectionStringTUC = "data source=VMGASMARKET;initial catalog=GMKT_TUC_2021;user id=consultas;password=consultas;multipleactiveresultsets=True;App=EntityFramework";
-        string connectionStringSAL = "data source=gasmarketsalta;initial catalog=GMKT_SALTA_2021;user id=consultas;password=consultas;multipleactiveresultsets=True;App=EntityFramework";
-        string connectionStringSGO = "data source=172.19.32.230;initial catalog=GMKT_STGO_2021;user id=consultas;password=consultas;multipleactiveresultsets=True;App=EntityFramework";
+        string connectionStringTUC = "data source=Tango\\AxSQLEXPRESS;initial catalog=GMKT_TUC_2021;user id=Axoft;password=Axoft;multipleactiveresultsets=True;App=EntityFramework";
+        string connectionStringSAL = "data source=Tango\\AxSQLEXPRESS;initial catalog=GMKT_SALTA_2021;user id=Axoft;password=Axoft;multipleactiveresultsets=True;App=EntityFramework";
+        string connectionStringSGO = "data source=Tango\\AxSQLEXPRESS;initial catalog=GMKT_STGO_2021;user id=Axoft;password=Axoft;multipleactiveresultsets=True;App=EntityFramework";
 
         public GASMARKET_TUCUMANEntities(string provincia): base("name=GASMARKET_TUCUMANEntities")
         {
